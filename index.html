@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Generate a <span class="span-title">Random password</span></h1>
+                <p>Never use an insecure password again.</p>
+            </header>
+            <main>
+                <div class="label-field">
+                    <label>Exclude symbols <span class="span-optional">(optional)</span></label>
+                    <select name="symbols" id="symbols">
+                        <option value="">-- None --</option>
+                        <option value="capital-letters">Capital letters</option>
+                        <option value="small-letters">Small letters</option>
+                        <option value="numbers">Numbers</option>
+                        <option value="special-characters">Special characters</option>
+                    </select></div>
+                <div class="label-field">
+                    <label>Enter password length <span class="span-optional">(optional)</span></label>
+                    <input type="number" name="" id="" class="pass-length" min="8"></div>
+                <div class="label-field">
+                    <button class="pass-generator" type="button">Generate passwords</button></div>
+                <div class="separator"></div>
+                <div class="pass-buttons">
+                    <button></button>
+                    <button></button>
+                </div></main>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
