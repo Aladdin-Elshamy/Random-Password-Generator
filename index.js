@@ -85,6 +85,8 @@ passTwo.addEventListener("mouseover",function(){
         passTwo.style.cursor="pointer"
 });
 passOne.addEventListener("click",function(){
+    if(passOne.textContent == 'Copied!')
+        return 
     navigator.clipboard.writeText(passOne.textContent);
     const tempPassOne = passOne.textContent;
     if(passOne.textContent){
@@ -101,6 +103,8 @@ passOne.addEventListener("click",function(){
     }
 })
 passTwo.addEventListener("click",function(){
+    if(passTwo.textContent == 'Copied!')
+        return 
     navigator.clipboard.writeText(passTwo.textContent);
     const tempPassTwo = passTwo.textContent;
     if(passTwo.textContent){
